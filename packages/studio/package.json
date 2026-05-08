@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
+    "build:css": "$(npm root)/.bin/tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
     "build": "npm run build:css && babel src --out-dir dist --extensions .js,.jsx"
   },
   "license": "MIT",
